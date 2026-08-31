@@ -16,7 +16,8 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Github", href: "https://github.com/edwardadrian807-lab" },
   ],
   socialImage: "/zen-og.png",
-  canonicalURL: "https://portfolio.vercel.app",
+  socialImage: "/zen-og.png",
+canonicalURL: "",
 };
 
 export const SITE_CONTENT: SiteContent = {
