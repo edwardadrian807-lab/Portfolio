@@ -15,7 +15,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "LinkedIn", href: "https://www.linkedin.com/in/adrianedward/" },
     { text: "Github", href: "https://github.com/edwardadrian807-lab" },
   ],
-  socialImage: "/zen-og.png",
+  
   socialImage: "/zen-og.png",
 canonicalURL: "",
 };
