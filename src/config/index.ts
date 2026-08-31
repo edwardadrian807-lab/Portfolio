@@ -82,7 +82,7 @@ export const SITE_CONTENT: SiteContent = {
   `,
   image: "/alejandro-big.jpg",
 },
-    skills: [
+     skills: [
     "C",
     "C++",
     "Java",
@@ -103,5 +103,7 @@ export const SITE_CONTENT: SiteContent = {
     "Scikit-learn",
     "OpenCV",
   ],
+};
 
+// #5755ff
 // #5755ff
