@@ -1,0 +1,21 @@
+---
+import Section from "./Section.astro";
+
+interface Props {
+  skills: string[];
+}
+
+const { skills } = Astro.props;
+---
+
+<Section text="Skills" href="skills">
+  <div class="flex flex-wrap gap-3">
+    {skills.map((skill) => (
+      <span
+        class="rounded-full border border-neutral/30 px-4 py-2 text-sm text-neutral"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</Section>
