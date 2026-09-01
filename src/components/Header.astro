@@ -1,58 +1,3 @@
----
-import Menu from "@icons/Menu.astro";
-import { Image } from "astro:assets";
-import type { HeaderProps } from "@types";
-
-type Props = HeaderProps;
-
-const { siteLogo, navLinks } = Astro.props;
----
-
-<header
-  class="sticky top-0 z-50 mx-auto flex max-w-5xl animate-slide-in justify-between bg-black px-5 py-6"
->
-  <a href="/" aria-label="Home link">
-    <Image
-      class="rounded-full"
-      src={siteLogo}
-      width="45"
-      height="45"
-      alt="website logo"
-      priority
-    />
-  </a>
-
-  <button
-    type="button"
-    id="menu-button"
-    class="px-1.5 text-neutral sm:hidden"
-    aria-expanded="false"
-    aria-controls="main-menu"
-  >
-    <Menu />
-  </button>
-
-  <nav
-    class="absolute top-20 right-5 hidden rounded-xl border border-neutral/40 bg-black px-4 py-5 text-neutral sm:static sm:block sm:border-0 sm:bg-transparent sm:p-0"
-    id="main-menu"
-  >
-    <ul class="gap-2 sm:flex">
-      {
-        navLinks.map((link) => (
-          <li class="relative">
-            <a
-              class={`nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white`}
-              href={link.href}
-            >
-              {link.text}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-</header>
-
 <script>
   // Toggle mobile menu
   const button = document.querySelector("#menu-button");
@@ -66,11 +11,21 @@ const { siteLogo, navLinks } = Astro.props;
   };
 
   button?.addEventListener("click", toggleMenu);
+
+  // Activate the clicked navigation item immediately
   navItems.forEach((item) => {
-    item?.addEventListener("click", toggleMenu);
+    item?.addEventListener("click", () => {
+      navItems.forEach((nav) => {
+        nav.classList.remove("text-white", "md:after:opacity-100");
+      });
+
+      item.classList.add("text-white", "md:after:opacity-100");
+
+      toggleMenu();
+    });
   });
 
-  // Update navigation based on scroll position with Intersection Observer
+  // Update navigation based on scroll position
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -103,10 +58,3 @@ const { siteLogo, navLinks } = Astro.props;
     }
   };
 </script>
-
-<style>
-  header {
-    animation-timeline: scroll();
-    animation-range: 0 650px;
-  }
-</style>
