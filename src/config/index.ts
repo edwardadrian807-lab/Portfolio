@@ -7,10 +7,13 @@ export const SITE_CONFIG: SiteConfig = {
     "Computer Science student and software developer focused on building practical applications using Java, C++, Python, and modern web technologies.",
   lang: "en",
   siteLogo: "/alejandro-small.jpg",
-  navLinks: [
-    { text: "Projects", href: "#projects" },
-    { text: "About", href: "#about" },
-  ],
+ navLinks: [
+  { text: "Work Experience", href: "#experience" },
+  { text: "Projects", href: "#projects" },
+  { text: "Skills", href: "#skills" },
+  { text: "Education", href: "#education" },
+  { text: "About", href: "#about" },
+],
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/adrianedward/" },
     { text: "Github", href: "https://github.com/edwardadrian807-lab" },
