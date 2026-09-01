@@ -10,21 +10,22 @@
     button?.setAttribute("aria-expanded", `${!isHidden}`);
   };
 
-  button?.addEventListener("click", toggleMenu);
+ button?.addEventListener("click", toggleMenu);
 
-  // Activate the clicked navigation item immediately
-  navItems.forEach((item) => {
-    item?.addEventListener("click", () => {
-      navItems.forEach((nav) => {
-        nav.classList.remove("text-white", "md:after:opacity-100");
-      });
-
-      item.classList.add("text-white", "md:after:opacity-100");
-
-      toggleMenu();
+navItems.forEach((item) => {
+  item?.addEventListener("click", () => {
+    navItems.forEach((nav) => {
+      nav.classList.remove("text-white", "md:after:opacity-100");
     });
-  });
 
+    item.classList.add("text-white", "md:after:opacity-100");
+
+    // Only close the menu on mobile
+    if (window.innerWidth < 640) {
+      toggleMenu();
+    }
+  });
+});
   // Update navigation based on scroll position
   const observer = new IntersectionObserver(
     (entries) => {
