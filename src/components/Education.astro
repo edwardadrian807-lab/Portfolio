@@ -1,0 +1,41 @@
+---
+import Section from "./Section.astro";
+
+interface Props {
+  education: {
+    institution: string;
+    degree: string;
+    startDate: string;
+    endDate: string;
+    score: string;
+  }[];
+}
+
+const { education } = Astro.props;
+---
+
+<Section text="Education" href="education">
+  <div class="space-y-8">
+    {education.map((item) => (
+      <div class="border-l-2 border-neutral/30 pl-6">
+        <h3 class="text-xl font-semibold text-neutral">
+          {item.degree}
+        </h3>
+
+        <p class="mt-1 text-neutral/80">
+          {item.institution}
+        </p>
+
+        <div class="mt-2 flex flex-wrap gap-4 text-sm text-neutral/60">
+          <span>
+            {item.startDate} – {item.endDate}
+          </span>
+
+          <span>
+            {item.score}
+          </span>
+        </div>
+      </div>
+    ))}
+  </div>
+</Section>
