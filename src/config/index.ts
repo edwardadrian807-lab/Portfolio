@@ -60,7 +60,7 @@ export const SITE_CONTENT: SiteContent = {
       "Two-player, turn-based dice game built with Java using OOP, randomized dice rolls, score tracking, and Java Swing animation.",
     linkPreview: "/",
     linkSource: "https://github.com/edwardadrian807-lab/dicegame",
-    image: "/shopify-clon.png",
+    image: "/dicegame.png",
   },
   {
     name: "Legal Metrology Compliance System",
