@@ -6,7 +6,7 @@ export const SITE_CONFIG: SiteConfig = {
   description:
     "Computer Science student and software developer focused on building practical applications using Java, C++, Python, and modern web technologies.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/adrian.jpeg",
  navLinks: [
   { text: "Work Experience", href: "#experience" },
   { text: "Projects", href: "#projects" },
