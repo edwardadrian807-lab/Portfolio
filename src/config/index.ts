@@ -52,7 +52,7 @@ export const SITE_CONTENT: SiteContent = {
       "Developed an autonomous trolley capable of human detection and tracking using Arduino UNO, 3 IR sensors, an ultrasonic sensor, and 2 servo motors.",
     linkPreview: "/",
     linkSource: "https://github.com/edwardadrian807-lab",
-    image: "/spotifu.png",
+    image: "/arduino.jpeg",
   },
   {
     name: "Dice Game System",
