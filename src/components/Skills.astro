@@ -11,11 +11,15 @@ const { skills } = Astro.props;
 <Section text="Skills" href="skills">
   <div class="flex flex-wrap gap-3">
     {skills.map((skill) => (
-      <span
-        class="rounded-full border border-neutral/30 px-4 py-2 text-sm text-neutral"
-      >
-        {skill}
-      </span>
+     <span
+  class="rounded-full border border-neutral/30 px-4 py-2 text-sm text-neutral
+         transition-all duration-300
+         hover:border-purple-400
+         hover:shadow-[0_0_15px_rgba(168,85,247,0.7)]
+         hover:-translate-y-1"
+>
+  {skill}
+</span>
     ))}
   </div>
 </Section>
