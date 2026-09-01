@@ -68,7 +68,7 @@ export const SITE_CONTENT: SiteContent = {
       "Ongoing software system for automated compliance verification of packaged commodities against Legal Metrology requirements.",
     linkPreview: "/",
     linkSource: "https://github.com/edwardadrian807-lab",
-    image: "/clone-ig.png",
+    image: "/web.png",
   },
 ],
   about: {
