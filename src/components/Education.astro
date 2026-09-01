@@ -17,8 +17,18 @@ const { education } = Astro.props;
 <Section text="Education" href="education">
   <div class="space-y-8">
     {education.map((item) => (
-      <div class="border-l-2 border-neutral/30 pl-6">
-        <h3 class="text-xl font-semibold text-neutral">
+      <div
+        class="group rounded-xl border border-neutral/20 p-6
+               transition-all duration-300
+               hover:-translate-y-1
+               hover:border-purple-400
+               hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]"
+      >
+        <h3
+          class="text-xl font-semibold text-neutral
+                 transition-all duration-300
+                 group-hover:text-purple-300"
+        >
           {item.degree}
         </h3>
 
