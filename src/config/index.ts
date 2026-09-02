@@ -7,10 +7,11 @@ export const SITE_CONFIG: SiteConfig = {
     "Computer Science student and software developer focused on building practical applications using Java, C++, Python, and modern web technologies.",
   lang: "en",
   siteLogo: "/adrian.jpeg",
- navLinks: [
+navLinks: [
   { text: "Work Experience", href: "#experience" },
   { text: "Projects", href: "#projects" },
   { text: "Skills", href: "#skills" },
+  { text: "Certificates", href: "#certificates" },
   { text: "Education", href: "#education" },
   { text: "About", href: "#about" },
 ],
