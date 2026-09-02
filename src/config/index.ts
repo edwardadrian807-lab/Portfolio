@@ -116,7 +116,7 @@ export const SITE_CONTENT: SiteContent = {
   {
     name: "Vertos Tech Summit",
     date: "Oct 2025",
-    link: "",
+    link: "/Certificate.png",
   },
   {
     name: "Data Structures & Algorithms Training | Coursera",
