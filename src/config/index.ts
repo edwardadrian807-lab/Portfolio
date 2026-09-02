@@ -101,6 +101,28 @@ export const SITE_CONTENT: SiteContent = {
   "GitHub",
   "Data Structures & Algorithms",
 ],
+  certificates: [
+  {
+    name: "Introduction to Python | Infosys Springboard",
+    date: "Jan 2026 – Mar 2026",
+    link: "",
+  },
+  {
+    name: "Introduction to Artificial Intelligence",
+    date: "Feb 2026 – Apr 2026",
+    link: "",
+  },
+  {
+    name: "Vertos Tech Summit",
+    date: "Oct 2025",
+    link: "",
+  },
+  {
+    name: "Data Structures & Algorithms Training | Coursera",
+    date: "Jan 2026 – Mar 2026",
+    link: "https://coursera.org/share/c43543831ee7f5fa423905e56bbd4d20a",
+  },
+],
 
 education: [
   {
