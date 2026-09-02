@@ -1,0 +1,47 @@
+---
+import Section from "./Section.astro";
+import type { CertificateProps } from "@types";
+
+interface Props {
+  certificates: CertificateProps[];
+}
+
+const { certificates } = Astro.props;
+---
+
+<Section text="Certificates" href="certificates">
+  <div class="space-y-12">
+    {
+      certificates.map((certificate) => (
+        <div
+          class="rounded-2xl border border-neutral/20 bg-black p-8
+                 transition-all duration-300
+                 hover:-translate-y-2
+                 hover:border-purple-400
+                 hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]"
+        >
+          <h3 class="text-2xl font-medium text-primary">
+            {certificate.name}
+          </h3>
+
+          <p class="mt-3 text-sm text-neutral/70">
+            {certificate.date}
+          </p>
+
+          {
+            certificate.link && (
+              <a
+                href={certificate.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 inline-block text-white hover:underline"
+              >
+                View Certificate ↗
+              </a>
+            )
+          }
+        </div>
+      ))
+    }
+  </div>
+</Section>
