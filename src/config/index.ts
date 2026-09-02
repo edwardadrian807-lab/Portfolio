@@ -106,12 +106,12 @@ export const SITE_CONTENT: SiteContent = {
   {
     name: "Introduction to Python | Infosys Springboard",
     date: "Jan 2026 – Mar 2026",
-    link: "",
+    link: "file:///C:/Users/DELL/Downloads/9febe6be-1ace-4263-a90b-33d6df31a121.pdf",
   },
   {
     name: "Introduction to Artificial Intelligence",
     date: "Feb 2026 – Apr 2026",
-    link: "",
+    link: "file:///C:/Users/DELL/Downloads/62504043-c04f-4475-9d7b-8df7536db380.pdf",
   },
   {
     name: "Vertos Tech Summit",
@@ -121,7 +121,7 @@ export const SITE_CONTENT: SiteContent = {
   {
     name: "Data Structures & Algorithms Training | Coursera",
     date: "Jan 2026 – Mar 2026",
-    link: "https://coursera.org/share/c43543831ee7f5fa423905e56bbd4d20a",
+    link: "https://www.coursera.org/account/accomplishments/verify/8RUM60E83IJP?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
   },
 ],
 
