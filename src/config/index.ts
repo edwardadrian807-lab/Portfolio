@@ -85,7 +85,7 @@ export const SITE_CONTENT: SiteContent = {
     I am continuously developing my problem-solving and software engineering
     skills through projects, technical training, and hands-on development.
   `,
-  image: "/adrian.jpeg",
+  image: "/ADRIANPORT.png",
 },
     skills: [
   "C",
